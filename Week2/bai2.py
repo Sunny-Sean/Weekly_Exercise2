@@ -8,6 +8,7 @@ def count_chars(chuoi):
         else:
             thu_vien[ky_tu] = 1
     return thu_vien
-    
-chuoi = "SMmilesSI"
+
+
+chuoi = "SMmilesSIm"
 print(count_chars(chuoi))
