@@ -1,11 +1,13 @@
 import math
 
+
 def is_number(n):
-  try:
-    float(n)
-  except ValueError:
-    return False
-  return True
+    try:
+        float(n)
+    except ValueError:
+        return False
+    return True
+
 
 def ex2():
     value_x = input("Input x = ")
@@ -13,7 +15,7 @@ def ex2():
         value = float(value_x)
         thuc_hien = input("Input activation Function (sigmoid|relu|elu): ")
         if thuc_hien == "sigmoid":
-            sigmoid = 1/ (1+math.e**(-value))
+            sigmoid = 1 / (1+math.e**(-value))
             print(sigmoid)
             return sigmoid
         elif thuc_hien == "relu":
@@ -32,9 +34,9 @@ def ex2():
             return elu
         else:
             print(f"{thuc_hien} is not supported")
-            return
+
     else:
         print("x must be a number")
-        return
+
 
 ex2()
